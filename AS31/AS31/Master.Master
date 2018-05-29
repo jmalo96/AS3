@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="AS31.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <asp:Button ID="btnIndex" runat="server" CausesValidation="False" PostBackUrl="index.aspx" Text="Index" />
+            <asp:Button ID="btnProduct" runat="server" CausesValidation="False" PostBackUrl="ProductMaintenance.aspx" Text="Product Maintenance" />
+            <asp:Button ID="btnTech" runat="server" CausesValidation="False" PostBackUrl="TechnicianMaintenance.aspx" Text="Technician Maintenance" />
+            <asp:Button ID="btnCust" runat="server" CausesValidation="False" PostBackUrl="AddRegistration.aspx" Text="Customer Registration" />
+            <asp:Button ID="btnIncidents" runat="server" CausesValidation="False" PostBackUrl="Incidents.aspx" Text="Incidents" />
+        </div>
+        <div>
+        </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
